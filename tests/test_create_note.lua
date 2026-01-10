@@ -19,7 +19,7 @@ local title = "My Title"
 local opts = { binary_path = "custom-bin" }
 core.create_note(title, opts)
 
-if last_args[1] ~= "custom-bin" or last_args[2] ~= "create" or last_args[3] ~= title then
+if last_args[1] ~= "custom-bin" or last_args[2] ~= "new" or last_args[3] ~= title then
    print("Failure: Args mismatch")
    print(vim.inspect(last_args))
    os.exit(1)

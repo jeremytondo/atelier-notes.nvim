@@ -6,9 +6,12 @@ local M = {}
 function M.execute_command(args)
   -- Use vim.system for executing commands
   local obj = vim.system(args, { text = true }):wait()
+  
   if obj.code ~= 0 then
+      vim.notify("AtelierNotes Error: " .. (obj.stderr or "Unknown error"), vim.log.levels.ERROR)
       return nil
   end
+  
   return obj.stdout
 end
 
@@ -18,7 +21,7 @@ end
 --- @return string|nil The output or nil on failure
 function M.create_note(title, opts)
     local binary = opts and opts.binary_path or "atelier-notes"
-    return M.execute_command({binary, "create", title})
+    return M.execute_command({binary, "new", title})
 end
 
 return M

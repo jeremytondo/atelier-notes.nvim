@@ -4,7 +4,7 @@
 This track implements the foundational feature of the `atelier-notes.nvim` plugin: the ability to create a new note via the `atelier-notes` CLI from within Neovim.
 
 ## Requirements
-- **CLI Integration:** The plugin must execute the command `atelier-notes create "<title>"` (or equivalent based on actual CLI API).
+- **CLI Integration:** The plugin must execute the command `atelier-notes new "<title>"` (or equivalent based on actual CLI API).
 - **User Input:** Use `snacks.input` (or `vim.ui.input` as a fallback) to prompt the user for a note title.
 - **Success/Error Handling:** Provide minimal feedback (notifications) only on failure, adhering to the "Quiet by Default" guideline.
 - **Configuration:** Honor the `binary_path` setting from the user's configuration.
