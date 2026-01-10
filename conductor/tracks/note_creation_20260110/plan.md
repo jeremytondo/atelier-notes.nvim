@@ -2,7 +2,7 @@
 
 ## Phase 1: Foundation & CLI Wrapper
 - [x] Task: Create `lua/atelier-notes/core.lua` to house CLI execution logic. [4515e11]
-- [ ] Task: Implement `core.execute_command(args)` using `vim.system` or `vim.fn.system`.
+- [x] Task: Implement `core.execute_command(args)` using `vim.system` or `vim.fn.system`. [8bf8e01]
 - [ ] Task: Implement `core.create_note(title)` which builds and runs the specific creation command.
 - [ ] Task: Conductor - User Manual Verification 'Phase 1: Foundation & CLI Wrapper' (Protocol in workflow.md)
 
