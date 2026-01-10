@@ -13,7 +13,8 @@ end
 
 --- Create a new note
 function M.create_note()
-    vim.ui.input({ prompt = M.options.ui.prompt_new }, function(input)
+    local input_func = (Snacks and Snacks.input) or vim.ui.input
+    input_func({ prompt = M.options.ui.prompt_new }, function(input)
         if input then
             core.create_note(input, M.options)
         end
