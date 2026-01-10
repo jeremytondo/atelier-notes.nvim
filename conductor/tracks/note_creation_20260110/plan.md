@@ -12,4 +12,5 @@
 - [x] Task: Use `snacks.input` for the title prompt, falling back to `vim.ui.input`. [c33d5a0]
 - [x] Task: Bind the UI input to the `core.create_note` function. [c33d5a0]
 - [x] Task: Define the `:AtelierNotesCreate` command in `plugin/atelier-notes.lua`. [3728aa0]
+- [x] Task: Debug & Fix: Corrected CLI command to 'new' and added error reporting. [a74790d]
 - [ ] Task: Conductor - User Manual Verification 'Phase 2: UI Integration & Commands' (Protocol in workflow.md)
